@@ -6,6 +6,7 @@ import page02 from '@/components/page02'
 import page01A from '@/components/page01/page01-A'
 import page01B from '@/components/page01/page01-b'
 import pageEnd from '@/components/page01/B/end'
+import foods from '@/components/foods'
 
 Vue.use(Router)
 
@@ -49,6 +50,11 @@ export default new Router({
       path: '/page02',
       name: 'page02',
       component: page02
+    },
+    {
+      path: '/foods',
+      name: 'foods',
+      component: foods
     }
   ]
 })

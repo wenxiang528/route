@@ -3,6 +3,7 @@
     <ul>
       <li v-for="item in links"><a @click="$goRoute(item.route)">{{item.text}}</a></li>
     </ul>
+    <span><a @click="$goRoute('/')">回主页</a></span>
     <router-view></router-view>
   </div>
 </template>
@@ -24,6 +25,10 @@
           {
             text: '水蜜桃',
             route: '/page02'
+          },
+          {
+            text: '食物',
+            route: '/foods'
           }
         ]
       }
